@@ -1,0 +1,39 @@
+# ==========================
+# LangGraph
+# ==========================
+langgraph
+langgraph-checkpoint
+langgraph-checkpoint-postgres
+langgraph-sdk
+
+# ==========================
+# LangChain
+# ==========================
+langchain
+langchain-core
+langchain-groq
+langchain-huggingface
+
+# ==========================
+# Embeddings
+# ==========================
+sentence-transformers
+transformers
+torch
+
+# ==========================
+# PostgreSQL
+# ==========================
+psycopg[binary]>=3.3.0
+psycopg-pool
+
+# ==========================
+# Utilities
+# ==========================
+python-dotenv
+pydantic
+typing_extensions
+rich
+orjson
+numpy
+requests

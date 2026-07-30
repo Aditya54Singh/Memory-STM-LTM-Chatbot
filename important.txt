@@ -1,0 +1,13 @@
+Why convert SearchItem to RetrievedMemory?
+
+This is an important design decision.
+
+SearchItem is an internal LangGraph/PostgresStore object. If you use it throughout your application, your business logic becomes tightly coupled to the storage implementation.
+
+By converting it to your own RetrievedMemory model:
+
+Your nodes and services depend only on your domain models.
+If you later switch from PostgresStore to another vector database (e.g., Qdrant, Pinecone, Weaviate), only the retrieval service needs to change.
+The rest of your application remains unchanged.
+
+This follows the Dependency Inversion Principle from SOLID.
